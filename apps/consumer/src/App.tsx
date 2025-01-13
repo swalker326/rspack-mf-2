@@ -1,19 +1,16 @@
+import RemoteEntry from "producer/RemoteEntry";
 import "./App.css";
-import Remote from "producer/App";
 
-const App = () => {
+function App() {
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-
-      <div
-        style={{ marginTop: "20px", border: "1px solid #ccc", padding: "10px" }}
-      >
-        <Remote />
+    <div className="App">
+      <h1>Host</h1>
+      <div style={{ border: "1px solid white" }}>
+        <h2>Remote</h2>
+        <RemoteEntry />
       </div>
     </div>
   );
-};
+}
 
 export default App;
